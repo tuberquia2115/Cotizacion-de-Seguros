@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 import { primeraMayuscula } from '../../Herpers/Herpers'
 
 
@@ -27,4 +28,7 @@ const Resumen = ({ datos }) => {
     );
 }
 
+Resumen.propTypes = {
+    datos: PropTypes.object.isRequired
+}
 export default Resumen;

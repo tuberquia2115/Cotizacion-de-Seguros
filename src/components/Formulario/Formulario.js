@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types';
 import { obtenerDiferenciaYear, calcularMarca, calcularPlan } from '../../Herpers/Herpers';
 import {
     Campo,
@@ -123,6 +124,13 @@ const Formulario = ({ guardarResumen, guardarCargando }) => {
             >Cotizar</Buttom>
         </form>
     );
+}
+
+
+Formulario.propTypes = {
+    guardarResumen: PropTypes.func.isRequired,
+    guardarCargando: PropTypes.func.isRequired,
+
 }
 
 export default Formulario
